@@ -1,21 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import  Search from './Components/Search'
 
-
-
+import Dashboard from './Dashboard'
 import UKMap from './Components/Map';
+import React from 'react';
 
 function App() {
 
-  
-  return (
-    <div className="bg-gray-300 w-full h-full">
-        
-        <UKMap className='w-2/3 h-2/3' />
+  const [loaded, setLoaded] = useState(false)
+  return ( 
+    <Dashboard />
 
-    </div>
-  );
+  )
 }
 
 export default App;
